@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+$cardColor: rgba(225, 0, 38, 0.815);
+$cardColorNONopa: rgba(225, 0, 169, 0.54);
+$colortitle: rgba(23, 20, 20, 0.763);
+
+.card-container {
+    font-family: 'Lobster';
+  height: 35rem;
+  width: 20rem;
+  position: relative;
+  background-color: $cardColor;
+  overflow: hidden;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  margin: 3rem;
+  display: grid;
+  grid-template-rows: 80% 5% 5% 10%;
+  grid-template-areas: "img-section" "name-section" "title-section" "desc-section";
+}
+
+.img-card-section {
+  grid-area: img-section;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-card-square {
+  background-color: $cardColorNONopa;
+  height: 45rem;
+  width: 15rem;
+  position:absolute;
+  transform: rotate(75deg);
+  top:6rem;
+  left:5rem;
+
+}
+
+.img-card-style {
+  height: 85vh;
+  width: 100%;
+}
+
+.name-card-section {
+    grid-area: name-section;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title-card-section {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $colortitle;
+}
+
+.desc-card-section {
+    text-align: center;
+    font-size: 1rem;
+}
